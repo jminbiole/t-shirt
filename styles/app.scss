@@ -9,34 +9,27 @@
 
 
 body {
-  background: yellow;
 }
 .outer-container {
   padding: $gutter;
-  background: red;
   width: 100%;
-  border: red solid 2px;
   display: flex;
   justify-content: center;
 }
 
 .container {
-  background: blue;
   width: $max-content-width;
 
 }
 
 .row {
-  background: green;
-  display: flex;
-  flex-wrap: wrap;
 
 }
 
 .grid-item {
-  background: purple;
   display: flex;
   justify-content: space-between;
-  width: 100%
+  width: 100%;
+  flex-wrap: wrap;
 
 }

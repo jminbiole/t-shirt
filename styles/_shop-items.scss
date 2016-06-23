@@ -2,11 +2,11 @@
 @import "_box-sizing.scss";
 
 .shop-item {
-  background: orange;
-  border: solid black 1px;
+  border: solid $brand-primary 2px;
   width: calc(90% / 3);
   display: flex;
   flex-direction: column;
+  margin-bottom: 1rem;
 }
 
 .shirt-div {
@@ -19,21 +19,35 @@
   justify-content: center;
   display: flex;
   flex-direction: column;
+  font-family: Verdana;
+  padding: .5rem;
+}
+.shop-item-title {
+  color: $brand-primary;
 }
 
 .descriptive-text {
   width: 100%;
+  color: $brand-primary;
+  font-size: .9rem;
+
 }
 
 .ul-shop-item-buttons {
-  border: 1px solid black;
+  border: 1px solid $brand-primary;
   display: flex;
   width: 100%;
+  color: $brand-primary;
 }
 
-.dropdown {
+.shop-button-dropdown {
   display: flex;
-  flex-direction: column-reverse;
+  position: relative;
+}
+
+.dropdown__options-square {
+  position: absolute;
+
 }
 
 .dropdown-item-tshirt-color-pink {
