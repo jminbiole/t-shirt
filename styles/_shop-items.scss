@@ -1,0 +1,35 @@
+@import 'variables'
+
+.shop-item {
+  // background: orange;
+  border: solid black 1px;
+}
+
+.shop-item__info {
+  display: flex;
+}
+
+.ul-shop-item-buttons {
+  border: 1px solid black;
+  display: flex;
+  // flex-direction: row;
+}
+
+.dropdown {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.dropdown-item-tshirt-color-pink {
+    color: $pink;
+  }
+
+.dropdown-item-tshirt-color-blue {
+    color: $blue;
+  }
+
+
+.dropdown__options {
+  display: flex;
+  flex-direction: column-reverse;
+}

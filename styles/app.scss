@@ -4,3 +4,39 @@
 // $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 // @import 'font-awesome';
 @import 'box-sizing';
+@import '_shop-items';
+@import 'variables';
+
+
+body {
+  background: yellow;
+}
+.outer-container {
+  padding: $gutter;
+  background: red;
+  width: 100%;
+  border: red solid 2px;
+}
+
+.container {
+  background: blue;
+  width: $max-content-width;
+
+}
+
+.row {
+  // background: green;
+}
+
+.grid-item {
+  // background: purple;
+  display: flex;
+
+}
+
+
+
+.shirt-div {
+  // width: $max-content-width;
+  margin: $gutter;
+}
