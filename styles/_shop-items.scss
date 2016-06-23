@@ -3,11 +3,12 @@
 
 .shop-item {
   border: solid $brand-primary 2px;
-  width: calc(90% / 3);
-  min-width: calc(90% / 3);
+  width: 100%;
+  min-width: 5rem;
   display: flex;
   flex-direction: column;
   margin-bottom: 1rem;
+  margin: 1rem;
 }
 
 .shirt-div {
@@ -42,6 +43,7 @@
   list-style: none;
   justify-content: space-around;
   font-size: 1.1rem;
+  min-width: 1rem;
 
 }
 

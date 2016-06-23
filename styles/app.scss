@@ -1,35 +1,26 @@
 // @import 'yoga';
 // @import 'normalize';
-
 // $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 // @import 'font-awesome';
 @import 'box-sizing';
 @import '_shop-items';
 @import 'variables';
-
-
-body {
-}
+body {}
 .outer-container {
-  padding: $gutter;
-  width: 100%;
-  display: flex;
-  justify-content: center;
+    padding: $gutter;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
-
 .container {
-  width: $max-content-width;
-
+    width: $max-content-width;
 }
-
 .row {
-
+    display: flex;
+    // width: calc(90% / 3)
 }
-
 .grid-item {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
 
 }
