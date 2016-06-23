@@ -4,6 +4,7 @@
 .shop-item {
   border: solid $brand-primary 2px;
   width: calc(90% / 3);
+  min-width: calc(90% / 3);
   display: flex;
   flex-direction: column;
   margin-bottom: 1rem;
@@ -11,6 +12,7 @@
 
 .shirt-div {
   width: 100%;
+  padding: .5rem;
 }
 
 .shop-item__info {
@@ -34,20 +36,93 @@
 }
 
 .ul-shop-item-buttons {
-  border: 1px solid $brand-primary;
   display: flex;
   width: 100%;
   color: $brand-primary;
+  list-style: none;
+  justify-content: space-around;
+  font-size: 1.3rem;
+
 }
 
-.shop-button-dropdown {
-  display: flex;
+.shop-button {
+  border-top: $brand-primary solid 2px;
+  border-right: $brand-primary solid 2px;
+  padding: .3rem;
+  flex-grow: 1;
+  text-align: center;
+}
+
+.shop-button-square {
   position: relative;
+  padding: .3rem;
+  flex-grow: 1;
+  border-top: $brand-primary solid 2px;
+  text-align: center;
+  border-right: $brand-primary solid 2px;
 }
 
-.dropdown__options-square {
+.dropdown-options_square {
   position: absolute;
+  list-style: none;
+  left: -2%;
+  bottom: 50%;
+  display: none;
+  padding: 0;
+  margin: 0 0 1rem 0;
+  border: $brand-primary solid 2px;
+}
 
+.squares {
+  border-bottom: $brand-primary solid 2px;
+  padding: .5rem .7rem;
+}
+
+.shop-button-sizes {
+  position: relative;
+  padding: .3rem;
+  flex-grow: 1;
+  border-top: $brand-primary solid 2px;
+  text-align: center;
+  font-size: 1.2rem;
+  border-right: $brand-primary solid 2px;
+}
+.dropdown-options_sizes {
+  position: absolute;
+  list-style: none;
+  right: 0%;
+  bottom: 50%;
+  display: none;
+  padding: 0;
+  margin: 0 0 1rem 0;
+  border: $brand-primary solid 2px;
+}
+
+.sizes {
+  border-bottom: $brand-primary solid 2px;
+  padding: .5rem .7rem;
+
+}
+
+.shop-button-square:hover {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  background: $brand-primary;
+}
+
+.shop-button-sizes:hover {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  background: $brand-primary;
+}
+
+.shop-button-cart {
+  border-top: $brand-primary solid 2px;
+  padding: .3rem;
+  flex-grow: 1;
+  text-align: center;
 }
 
 .dropdown-item-tshirt-color-pink {
@@ -59,9 +134,3 @@
     // color: $blue;
     color: blue;
   }
-
-
-.dropdown__options {
-  display: flex;
-  flex-direction: column-reverse;
-}
