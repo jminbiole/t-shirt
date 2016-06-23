@@ -1,18 +1,34 @@
-@import 'variables'
+@import 'variables';
+@import "_box-sizing.scss";
 
 .shop-item {
-  // background: orange;
+  background: orange;
   border: solid black 1px;
+  width: calc(90% / 3);
+  display: flex;
+  flex-direction: column;
+}
+
+.shirt-div {
+  width: 100%;
 }
 
 .shop-item__info {
+  width: 100%;
+  text-align: center;
+  justify-content: center;
   display: flex;
+  flex-direction: column;
+}
+
+.descriptive-text {
+  width: 100%;
 }
 
 .ul-shop-item-buttons {
   border: 1px solid black;
   display: flex;
-  // flex-direction: row;
+  width: 100%;
 }
 
 .dropdown {
@@ -21,11 +37,13 @@
 }
 
 .dropdown-item-tshirt-color-pink {
-    color: $pink;
+    // color: $pink;
+    color: pink;
   }
 
 .dropdown-item-tshirt-color-blue {
-    color: $blue;
+    // color: $blue;
+    color: blue;
   }
 
 

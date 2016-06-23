@@ -16,6 +16,8 @@ body {
   background: red;
   width: 100%;
   border: red solid 2px;
+  display: flex;
+  justify-content: center;
 }
 
 .container {
@@ -25,18 +27,16 @@ body {
 }
 
 .row {
-  // background: green;
+  background: green;
+  display: flex;
+  flex-wrap: wrap;
+
 }
 
 .grid-item {
-  // background: purple;
+  background: purple;
   display: flex;
+  justify-content: space-between;
+  width: 100%
 
-}
-
-
-
-.shirt-div {
-  // width: $max-content-width;
-  margin: $gutter;
 }
