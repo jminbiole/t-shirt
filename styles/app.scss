@@ -5,7 +5,10 @@
 @import 'box-sizing';
 @import '_shop-items';
 @import 'variables';
-body {}
+body {
+
+}
+
 .outer-container {
     padding: $gutter;
     width: 100%;
@@ -13,14 +16,15 @@ body {}
     justify-content: center;
 }
 .container {
-    width: $max-content-width;
+    width: 100%;
+    max-width: $max-content-width;
+    margin: auto;;
 }
 .row {
     display: flex;
-    // width: calc(90% / 3)
+    flex-flow: wrap;
 }
+// Divide by 3 goes in here
 .grid-item {
-    display: flex;
-    justify-content: space-between;
 
 }
