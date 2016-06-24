@@ -23,8 +23,19 @@ body {
 .row {
     display: flex;
     flex-flow: wrap;
-}
-// Divide by 3 goes in here
-.grid-item {
 
+    @media screen and (max-width: 48rem){
+      display: flex;
+
+      .shop-item {
+        flex-direction: row;
+
+
+      }
+    }
+}
+
+.grid-item {
+  width: calc(100% / 3 - 2rem);
+  margin: 1rem;
 }

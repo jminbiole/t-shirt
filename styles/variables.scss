@@ -6,3 +6,8 @@ $blue: #72bbe9;
 $green: #7abe93;
 $yellow: #e5b178;
 $max-content-width: 60rem;
+
+@media only screen and (min-width: 48px){
+  display: flex;
+  flex-direction: column;
+}
