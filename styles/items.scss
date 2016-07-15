@@ -1,6 +1,7 @@
 @import 'variables';
 @import "_box-sizing.scss";
 
+
 .shop-item {
   border: solid $brand-primary 4px;
   width: 100%;
@@ -87,10 +88,13 @@
   background: $brand-white;
   border-bottom: 0;
   color: $brand-primary;
+  text-transform: uppercase;
+  text-align: center;
 
   &__item {
     border-bottom: $brand-primary solid 4px;
     padding: 0.5rem 0.7rem;
+    text-align: center;
   }
 }
 

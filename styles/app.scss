@@ -1,9 +1,9 @@
 // @import 'yoga';
 // @import 'normalize';
 // $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
-// @import 'font-awesome';
+@import 'font-awesome';
 @import 'box-sizing';
-@import '_shop-items';
+@import 'items';
 @import 'variables';
 body {
 
@@ -22,18 +22,83 @@ body {
 }
 .row {
     display: flex;
-    flex-flow: wrap;
+    flex-wrap: wrap;
 
-    @media screen and (max-width: 48rem){
+    @media screen and (max-width: 700px) and (min-width: 470px){
       display: flex;
+      flex-direction: column;
 
       .shop-item {
         flex-direction: row;
+        max-width: 80%;
 
+      }
+      .ul-shop-item-buttons {
+        display: flex;
+        flex-direction: column;
+        width: 20%;
+        color: $brand-primary;
+        list-style: none;
+        font-size: 1.1rem;
+        min-width: 1rem;
+      }
+      .shop-button {
+        border-right: none;
+        border-left: $brand-primary solid 4px;
+        padding: 0.3rem;
+        flex-grow: 1;
+        text-align: center;
+        &:hover {
+          background: $brand-primary;
+          color: $brand-white;
+        }
+        &:first-child {
+          border-top: 0;
+        }
+      }
+
+
+  .dropdown {
+    position: relative;
+
+    &:hover {
+      .dropdown-options {
+        display: flex;
+        flex-direction: row-reverse;
 
       }
     }
-}
+  }
+
+      .dropdown-options {
+        position: absolute;
+        transform: translate(-100%, -25%);
+        list-style: none;
+        top: 5%;
+        right: 100%;
+        bottom: 5%;
+        padding: 0;
+        margin: 0;
+        border: $brand-primary solid 4px;
+        background: $brand-white;
+        color: $brand-primary;
+
+        &__item {
+          background: $brand-white;
+          text-align: center;
+          border: $brand-primary solid 4px;
+          border-right: none;
+          height: 2.5rem;
+          // padding: 0.5rem 0.7rem;
+        }
+      }
+      .grid-item {
+        width: 100%;
+      }
+      }
+    }
+
+
 
 .grid-item {
   width: calc(100% / 3 - 2rem);
