@@ -1,0 +1,120 @@
+@import 'variables';
+@import "_box-sizing.scss";
+
+
+.shop-item {
+  border: solid $brand-primary 4px;
+  width: 100%;
+  min-width: 5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.shirt-div {
+  width: 100%;
+  padding: 0.5rem;
+}
+
+.shop-item__info {
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  font-family: Verdana;
+  padding: 0.5rem;
+}
+
+.shop-item-title {
+  color: $brand-primary;
+}
+
+.descriptive-text {
+  width: 100%;
+  color: $brand-primary;
+  font-size: 0.9rem;
+}
+
+.ul-shop-item-buttons {
+  display: flex;
+  width: 100%;
+  color: $brand-primary;
+  list-style: none;
+  justify-content: space-around;
+  font-size: 1.1rem;
+  min-width: 1rem;
+}
+
+.shop-button {
+  flex-basis: 20%;
+  border-top: $brand-primary solid 4px;
+  border-right: $brand-primary solid 4px;
+  padding: 0.3rem;
+  flex-grow: 1;
+  text-align: center;
+
+  &:hover {
+    background: $brand-primary;
+    color: $brand-white;
+  }
+
+  &:last-child {
+    border-right: 0;
+  }
+}
+
+.dropdown {
+  position: relative;
+
+  &:hover {
+    .dropdown-options {
+      display: flex;
+    }
+  }
+}
+
+.dropdown-options {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  list-style: none;
+  left: 0;
+  right: 0;
+  bottom: 100%;
+  padding: 0;
+  margin: 0;
+  border: $brand-primary solid 4px;
+  background: $brand-white;
+  border-bottom: 0;
+  color: $brand-primary;
+  text-transform: uppercase;
+  text-align: center;
+
+  &__item {
+    border-bottom: $brand-primary solid 4px;
+    padding: 0.5rem 0.7rem;
+    text-align: center;
+  }
+}
+
+.dropdown-options_pink {
+  color: $pink;
+}
+
+
+.dropdown-options_blue {
+  color: $blue;
+}
+
+.dropdown-options_yellow {
+  color: $yellow;
+}
+
+.dropdown-options_green {
+  color: $green;
+}
+.dropdown-options__item {
+  &:hover {
+  font-size: 1.6rem;
+  }
+}
